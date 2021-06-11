@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4ECF152671A3C300D3002A /* NewRequestSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ECF142671A3C300D3002A /* NewRequestSheetView.swift */; };
+		3A9162A426718CF100C35FA3 /* VChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162A326718CF100C35FA3 /* VChatApp.swift */; };
+		3A9162A626718CF100C35FA3 /* RequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162A526718CF100C35FA3 /* RequestListView.swift */; };
+		3A9162A826718CF100C35FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9162A726718CF100C35FA3 /* Assets.xcassets */; };
+		3A9162AB26718CF100C35FA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9162AA26718CF100C35FA3 /* Preview Assets.xcassets */; };
+		3A9162B626718CF100C35FA3 /* VChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162B526718CF100C35FA3 /* VChatTests.swift */; };
+		3A9162C126718CF200C35FA3 /* VChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162C026718CF200C35FA3 /* VChatUITests.swift */; };
+		3A9162D026718D1500C35FA3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9162CF26718D1500C35FA3 /* FirebaseFirestore */; };
+		3A9162D226718D1500C35FA3 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9162D126718D1500C35FA3 /* FirebaseFirestoreSwift-Beta */; };
+		3A9162D826718D4C00C35FA3 /* RequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162D726718D4C00C35FA3 /* RequestRepository.swift */; };
+		3A9162DA26718E7000C35FA3 /* CallRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162D926718E7000C35FA3 /* CallRequest.swift */; };
+		3A9162DC2671905A00C35FA3 /* RequestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9162DB2671905A00C35FA3 /* RequestListViewModel.swift */; };
+		3A9162DE2671962100C35FA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A9162DD2671962100C35FA3 /* GoogleService-Info.plist */; };
+		3A9162DF2671962100C35FA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A9162DD2671962100C35FA3 /* GoogleService-Info.plist */; };
+		3A9162E02671962100C35FA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A9162DD2671962100C35FA3 /* GoogleService-Info.plist */; };
+		3ABE10B92671BE400040918A /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE10B82671BE400040918A /* RequestView.swift */; };
+		3ABE10BB2671BE960040918A /* RequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE10BA2671BE960040918A /* RequestViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A9162B226718CF100C35FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A91629826718CF100C35FA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A91629F26718CF100C35FA3;
+			remoteInfo = VChat;
+		};
+		3A9162BD26718CF100C35FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A91629826718CF100C35FA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A91629F26718CF100C35FA3;
+			remoteInfo = VChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A4ECF142671A3C300D3002A /* NewRequestSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRequestSheetView.swift; sourceTree = "<group>"; };
+		3A9162A026718CF100C35FA3 /* VChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9162A326718CF100C35FA3 /* VChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VChatApp.swift; sourceTree = "<group>"; };
+		3A9162A526718CF100C35FA3 /* RequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListView.swift; sourceTree = "<group>"; };
+		3A9162A726718CF100C35FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A9162AA26718CF100C35FA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A9162AC26718CF100C35FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9162B126718CF100C35FA3 /* VChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9162B526718CF100C35FA3 /* VChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VChatTests.swift; sourceTree = "<group>"; };
+		3A9162B726718CF100C35FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9162BC26718CF100C35FA3 /* VChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9162C026718CF200C35FA3 /* VChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VChatUITests.swift; sourceTree = "<group>"; };
+		3A9162C226718CF200C35FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9162D726718D4C00C35FA3 /* RequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRepository.swift; sourceTree = "<group>"; };
+		3A9162D926718E7000C35FA3 /* CallRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRequest.swift; sourceTree = "<group>"; };
+		3A9162DB2671905A00C35FA3 /* RequestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListViewModel.swift; sourceTree = "<group>"; };
+		3A9162DD2671962100C35FA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3ABE10B82671BE400040918A /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		3ABE10BA2671BE960040918A /* RequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A91629D26718CF100C35FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162D026718D1500C35FA3 /* FirebaseFirestore in Frameworks */,
+				3A9162D226718D1500C35FA3 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162AE26718CF100C35FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162B926718CF100C35FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A91629726718CF100C35FA3 = {
+			isa = PBXGroup;
+			children = (
+				3A9162A226718CF100C35FA3 /* VChat */,
+				3A9162B426718CF100C35FA3 /* VChatTests */,
+				3A9162BF26718CF200C35FA3 /* VChatUITests */,
+				3A9162A126718CF100C35FA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A9162A126718CF100C35FA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162A026718CF100C35FA3 /* VChat.app */,
+				3A9162B126718CF100C35FA3 /* VChatTests.xctest */,
+				3A9162BC26718CF100C35FA3 /* VChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A9162A226718CF100C35FA3 /* VChat */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162A326718CF100C35FA3 /* VChatApp.swift */,
+				3A9162D626718D3F00C35FA3 /* Repository */,
+				3A9162D526718D3A00C35FA3 /* Models */,
+				3A9162D426718D3400C35FA3 /* ViewModels */,
+				3A9162D326718D2E00C35FA3 /* Views */,
+				3A9162A726718CF100C35FA3 /* Assets.xcassets */,
+				3A9162AC26718CF100C35FA3 /* Info.plist */,
+				3A9162DD2671962100C35FA3 /* GoogleService-Info.plist */,
+				3A9162A926718CF100C35FA3 /* Preview Content */,
+			);
+			path = VChat;
+			sourceTree = "<group>";
+		};
+		3A9162A926718CF100C35FA3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162AA26718CF100C35FA3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A9162B426718CF100C35FA3 /* VChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162B526718CF100C35FA3 /* VChatTests.swift */,
+				3A9162B726718CF100C35FA3 /* Info.plist */,
+			);
+			path = VChatTests;
+			sourceTree = "<group>";
+		};
+		3A9162BF26718CF200C35FA3 /* VChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162C026718CF200C35FA3 /* VChatUITests.swift */,
+				3A9162C226718CF200C35FA3 /* Info.plist */,
+			);
+			path = VChatUITests;
+			sourceTree = "<group>";
+		};
+		3A9162D326718D2E00C35FA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162A526718CF100C35FA3 /* RequestListView.swift */,
+				3A4ECF142671A3C300D3002A /* NewRequestSheetView.swift */,
+				3ABE10B82671BE400040918A /* RequestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A9162D426718D3400C35FA3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162DB2671905A00C35FA3 /* RequestListViewModel.swift */,
+				3ABE10BA2671BE960040918A /* RequestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3A9162D526718D3A00C35FA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162D926718E7000C35FA3 /* CallRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A9162D626718D3F00C35FA3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3A9162D726718D4C00C35FA3 /* RequestRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A91629F26718CF100C35FA3 /* VChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A9162C526718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChat" */;
+			buildPhases = (
+				3A91629C26718CF100C35FA3 /* Sources */,
+				3A91629D26718CF100C35FA3 /* Frameworks */,
+				3A91629E26718CF100C35FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VChat;
+			packageProductDependencies = (
+				3A9162CF26718D1500C35FA3 /* FirebaseFirestore */,
+				3A9162D126718D1500C35FA3 /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = VChat;
+			productReference = 3A9162A026718CF100C35FA3 /* VChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A9162B026718CF100C35FA3 /* VChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A9162C826718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChatTests" */;
+			buildPhases = (
+				3A9162AD26718CF100C35FA3 /* Sources */,
+				3A9162AE26718CF100C35FA3 /* Frameworks */,
+				3A9162AF26718CF100C35FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A9162B326718CF100C35FA3 /* PBXTargetDependency */,
+			);
+			name = VChatTests;
+			productName = VChatTests;
+			productReference = 3A9162B126718CF100C35FA3 /* VChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A9162BB26718CF100C35FA3 /* VChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A9162CB26718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChatUITests" */;
+			buildPhases = (
+				3A9162B826718CF100C35FA3 /* Sources */,
+				3A9162B926718CF100C35FA3 /* Frameworks */,
+				3A9162BA26718CF100C35FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A9162BE26718CF100C35FA3 /* PBXTargetDependency */,
+			);
+			name = VChatUITests;
+			productName = VChatUITests;
+			productReference = 3A9162BC26718CF100C35FA3 /* VChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A91629826718CF100C35FA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3A91629F26718CF100C35FA3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3A9162B026718CF100C35FA3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3A91629F26718CF100C35FA3;
+					};
+					3A9162BB26718CF100C35FA3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3A91629F26718CF100C35FA3;
+					};
+				};
+			};
+			buildConfigurationList = 3A91629B26718CF100C35FA3 /* Build configuration list for PBXProject "VChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A91629726718CF100C35FA3;
+			packageReferences = (
+				3A9162CE26718D1500C35FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3A9162A126718CF100C35FA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A91629F26718CF100C35FA3 /* VChat */,
+				3A9162B026718CF100C35FA3 /* VChatTests */,
+				3A9162BB26718CF100C35FA3 /* VChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A91629E26718CF100C35FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162AB26718CF100C35FA3 /* Preview Assets.xcassets in Resources */,
+				3A9162A826718CF100C35FA3 /* Assets.xcassets in Resources */,
+				3A9162DE2671962100C35FA3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162AF26718CF100C35FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162DF2671962100C35FA3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162BA26718CF100C35FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162E02671962100C35FA3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A91629C26718CF100C35FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABE10B92671BE400040918A /* RequestView.swift in Sources */,
+				3A9162A626718CF100C35FA3 /* RequestListView.swift in Sources */,
+				3A4ECF152671A3C300D3002A /* NewRequestSheetView.swift in Sources */,
+				3A9162DC2671905A00C35FA3 /* RequestListViewModel.swift in Sources */,
+				3A9162DA26718E7000C35FA3 /* CallRequest.swift in Sources */,
+				3A9162D826718D4C00C35FA3 /* RequestRepository.swift in Sources */,
+				3ABE10BB2671BE960040918A /* RequestViewModel.swift in Sources */,
+				3A9162A426718CF100C35FA3 /* VChatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162AD26718CF100C35FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162B626718CF100C35FA3 /* VChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9162B826718CF100C35FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9162C126718CF200C35FA3 /* VChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A9162B326718CF100C35FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A91629F26718CF100C35FA3 /* VChat */;
+			targetProxy = 3A9162B226718CF100C35FA3 /* PBXContainerItemProxy */;
+		};
+		3A9162BE26718CF100C35FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A91629F26718CF100C35FA3 /* VChat */;
+			targetProxy = 3A9162BD26718CF100C35FA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A9162C326718CF200C35FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A9162C426718CF200C35FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A9162C626718CF200C35FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VChat/Preview Content\"";
+				DEVELOPMENT_TEAM = DQHFFDCLMK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A9162C726718CF200C35FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VChat/Preview Content\"";
+				DEVELOPMENT_TEAM = DQHFFDCLMK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A9162C926718CF200C35FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VChat.app/VChat";
+			};
+			name = Debug;
+		};
+		3A9162CA26718CF200C35FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VChat.app/VChat";
+			};
+			name = Release;
+		};
+		3A9162CC26718CF200C35FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VChat;
+			};
+			name = Debug;
+		};
+		3A9162CD26718CF200C35FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.VChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A91629B26718CF100C35FA3 /* Build configuration list for PBXProject "VChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9162C326718CF200C35FA3 /* Debug */,
+				3A9162C426718CF200C35FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A9162C526718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9162C626718CF200C35FA3 /* Debug */,
+				3A9162C726718CF200C35FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A9162C826718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9162C926718CF200C35FA3 /* Debug */,
+				3A9162CA26718CF200C35FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A9162CB26718CF200C35FA3 /* Build configuration list for PBXNativeTarget "VChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9162CC26718CF200C35FA3 /* Debug */,
+				3A9162CD26718CF200C35FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A9162CE26718D1500C35FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A9162CF26718D1500C35FA3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A9162CE26718D1500C35FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3A9162D126718D1500C35FA3 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A9162CE26718D1500C35FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3A91629826718CF100C35FA3 /* Project object */;
+}
